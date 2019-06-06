@@ -44,9 +44,13 @@ body p {
 }
 
 .buttons {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-around; */
+  margin-top: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-rows: 50px 50px;
 }
 
 .btn {
@@ -156,18 +160,75 @@ body {
   opacity: .4
 }
 
-
-
-
-
+/* Partners Section */
 .partners {
   grid-area: partners;
+  display: grid;
+  padding: 0 1.5rem;
+  grid-gap: 5rem;
 }
 
+.partners .img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Download Section */
 .download {
   grid-area: download;
+  display: grid;
+  grid-gap: 2rem;
+  padding: 0 1.5rem;
 }
 
+/* Footer */
 .footer {
   grid-area: footer;
+  background: rgb(241, 241, 241);
+  display: grid;
+  grid-gap: 2.5rem;
+  padding: 0 1.5rem 3rem 1.5;
+ 
 }
+
+.footer img {
+  width: 20%;
+  margin: 4rem auto 0 auto;
+}
+
+.footer .nav {
+  display: grid;
+  grid-gap: 1.5rem;
+  text-decoration: none;
+  margin: 0 auto;
+  color: var(--grayish-blue);
+}
+
+.footer .nav a {
+  text-decoration: none;
+  font-weight: 900;
+  color: var(--grayish-blue);
+}
+
+.footer .nav a:hover {
+  color: var(--dark-grayish-blue);
+}
+
+.footer .links {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.footer .links img {
+  width: 10%;
+  margin: 0;
+}
+
+/* .footer .links a img {
+  display: block;
+  margin: 0 auto;
+} */
+
+
