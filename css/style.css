@@ -50,10 +50,10 @@ body p {
   margin-top: 1rem;
   display: grid;
   grid-gap: 1rem;
-  grid-template-rows: 50px 50px;
 }
 
 .btn {
+  height: 50px;
   padding: 1rem;
   border-radius: 50px;
   color: #fff;
@@ -112,11 +112,16 @@ body {
 
 .header h1 {
   font-weight: 600;
+
 }
 
 .header img {
   display: block;
-  margin: 0 auto;
+  margin: 2rem  auto 3rem auto;
+}
+
+.header .buttons {
+  padding: 2rem 0 5rem 0;
 }
 
 /*  Snipets Section */
@@ -166,10 +171,11 @@ body {
   display: grid;
   padding: 0 1.5rem;
   grid-gap: 5rem;
+  justify-content: center;
 }
 
 .partners .img {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -222,7 +228,7 @@ body {
 }
 
 .footer .links img {
-  width: 10%;
+  width: 7%;
   margin: 0;
 }
 
