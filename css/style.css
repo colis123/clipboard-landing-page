@@ -8,9 +8,10 @@
   box-sizing: border-box;
 }
 
-body  p {
+body p {
   opacity: .4;
 }
+
 
 :root {
   --strong-cyan: hsl(171, 66%, 44%);
@@ -24,8 +25,22 @@ body  p {
   text-align: center;
 }
 
-.text > p {
-  margin: .75rem 0;
+.text > div i {
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.info-area {
+  display: grid;
+  grid-gap: 2rem;
+}
+
+.img {
+  width: 100%;
 }
 
 .buttons {
@@ -94,6 +109,7 @@ body {
 .header h1 {
   font-weight: 600;
 }
+
 .header img {
   display: block;
   margin: 0 auto;
@@ -111,23 +127,38 @@ body {
   font-weight: 600;
 }
 
-.snipets .snipet-img {
-  width: 100%;
-}
-
-.snipets .info-area {
+/* .snipets .info-area {
   display: grid;
   grid-gap: 2rem;
-}
+} */
 
 /* Clipboard Secton */
 .clipboard {
   grid-area: clipboard;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-gap: 2.5rem;
 }
 
+/* Workflow Section */
 .workflow {
   grid-area: workflow;
+  display: grid;
+  grid-gap: 2rem;
+  padding: 0 1.5rem;
 }
+
+.workflow .text {
+  margin-bottom: 1.5rem;
+}
+
+.workflow i {
+  opacity: .4
+}
+
+
+
+
 
 .partners {
   grid-area: partners;
