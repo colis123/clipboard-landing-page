@@ -50,6 +50,7 @@ body p {
   margin-top: 1rem;
   display: grid;
   grid-gap: 1rem;
+  justify-content: center;
 }
 
 .btn {
@@ -59,6 +60,7 @@ body p {
   color: #fff;
   font-weight: 400;
   text-decoration: none;
+  width: 300px
 }
 
 .btn-primary {
@@ -232,9 +234,119 @@ body {
   margin: 0;
 }
 
-/* .footer .links a img {
-  display: block;
-  margin: 0 auto;
-} */
+
+
+@media screen and (min-width: 680px) {
+  /* Utilites */
+  .buttons {
+    grid-template-columns: 180px 180px;
+    justify-items: center;
+    align-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    width: 180px;
+  }
+
+  /*  Header */
+  .header {
+    padding: 0 10rem;
+    background: url('/images/bg-header-desktop.png') no-repeat center center/cover;
+  }
+
+  .header img {
+    margin: 3rem auto 0 auto;
+  }
+
+
+  /* Snipets */
+  .snipets .desktop-text {
+    padding: 0 10rem;
+    grid-column: 1/ -1;
+  }
+
+  .snipets img {
+     /*  */
+  }
+
+  .snipets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin-top: -1rem;
+    padding: 0 5rem 0 0;
+  }
+
+  .snipets div > h2, p {
+    text-align: center;
+  }
+
+  .snipets .info-area .text p {
+    text-align: left;
+  }
+
+  /* Clipboard */
+  .clipboard {
+    /* padding: 0 12rem; */
+  }
+
+  .clipboard img {
+    width: 600px;
+    margin: 1rem auto 0 auto;
+  }
+
+  /* Workflow */
+  .workflow {
+    padding: 0 4rem;
+  }
+  .workflow .info-area {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  /* Partners */
+  .partners {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .partners .img {
+    width: 50%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 0 2rem;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+
+  }
+
+  .footer .img {
+    display: block;
+    width: 60px;
+    padding-bottom: 3rem;
+  }
+
+  .footer .nav {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+  }
+
+  .footer .links img {
+    width: 30px;
+    margin: 0 1rem;
+  }
+
+  .footer .links a img {
+    padding-top: 5rem;
+    cursor: pointer;
+  }
+
+
+}
 
 
